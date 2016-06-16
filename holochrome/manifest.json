@@ -1,0 +1,49 @@
+{
+    "web_accessible_resources": [
+        "disableReload.js"
+    ],
+    "commands": {
+        "open-console": {
+            "global": true,
+            "suggested_key": {
+                "default": "Ctrl+Shift+1",
+                "mac": "Command+Shift+1"
+            },
+            "description": "Open a tab to AWS console"
+        }
+    },
+    "browser_action": {
+        "name": "Click to open AWS Console. Or press Cmd+Shift+1.",
+        "default_icon": "holochrome-128.png"
+    },
+    "description": "Use your IAM role (from instance metadata) to open the AWS console.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://console.aws.amazon.com/*"
+            ],
+            "js": [
+                "inject.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "holochrome-128.png"
+    },
+    "background": {
+        "scripts": [
+            "script.js"
+        ]
+    },
+    "version": "1.1",
+    "manifest_version": 2,
+    "permissions": [
+        "notifications",
+        "webRequest",
+        "https://signin.aws.amazon.com/federation",
+        "http://169.254.169.254/*",
+        "https://console.aws.amazon.com/*",
+        "https://aws.amazon.com/"
+    ],
+    "name": "Holochrome"
+}
