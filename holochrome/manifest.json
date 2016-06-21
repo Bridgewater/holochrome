@@ -41,6 +41,7 @@
         "notifications",
         "webRequest",
         "https://signin.aws.amazon.com/federation",
+        "https://*.signin.aws.amazon.com/oauth",
         "http://169.254.169.254/*",
         "https://console.aws.amazon.com/*",
         "https://aws.amazon.com/"
