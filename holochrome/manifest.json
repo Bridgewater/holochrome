@@ -20,7 +20,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://console.aws.amazon.com/*"
+                "https://console.aws.amazon.com/*",
+                "https://*.console.aws.amazon.com/*"
             ],
             "js": [
                 "inject.js"
@@ -35,7 +36,7 @@
             "script.js"
         ]
     },
-    "version": "1.2",
+    "version": "1.3",
     "manifest_version": 2,
     "permissions": [
         "notifications",
