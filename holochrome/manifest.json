@@ -20,7 +20,6 @@
     "content_scripts": [
         {
             "matches": [
-                "https://console.aws.amazon.com/*",
                 "https://*.console.aws.amazon.com/*"
             ],
             "js": [
