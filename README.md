@@ -1,4 +1,10 @@
-![Holochrome Icon](holochrome-920x680.png "Holochrome Icon")
+[![Holochrome Icon](holochrome-920x680.png "Holochrome Icon")](https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa)
+
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/d/fgnplojdffjfbcmoldcfdoikldnogjpa.svg?maxAge=2592000?style=plastic)](https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/fgnplojdffjfbcmoldcfdoikldnogjpa.svg?maxAge=2592000?style=plastic)](https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/fgnplojdffjfbcmoldcfdoikldnogjpa.svg?maxAge=2592000?style=plastic)](https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/fgnplojdffjfbcmoldcfdoikldnogjpa.svg?maxAge=2592000?style=plastic)](https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa)
+
 
 Holochrome is a chrome extension that allows you to easily log in and switch between your AWS accounts using a single key stroke. It is built on top of the [aws instance metadata service](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) and therefore encourages security best practices by completely removing the need for static, long-lived credentials. The AWS console session is granted the exact same permissions as the [IAM role](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) available via the metadata service.
 
