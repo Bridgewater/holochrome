@@ -34,6 +34,12 @@ If you want to leverage Holochrome on your local development machine, check out 
 
 Follow the Chrome Development Guidelines for [loading an unpacked extension](https://developer.chrome.com/extensions/getstarted#unpacked). Target the inner holochrome/ folder.
 
+To run tests:
+
+```
+cd test && npm install && npm test
+```
+
 ## TODO
 
 1. Rotate session seamlessly without being logged out
