@@ -60,6 +60,7 @@ var request = function(url, callback, isEvent, attempts=0) {
 var getSigninToken = function(creds, isEvent) {
   var signinTokenUrl = federationUrlBase
                         + '?Action=getSigninToken'
+                        + '&SessionDuration=43200'
                         + '&Session=' + encodeURIComponent(JSON.stringify(creds));
   var onComplete = function(response) {
       response = JSON.parse(response);
