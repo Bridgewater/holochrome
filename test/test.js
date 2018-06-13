@@ -42,7 +42,7 @@ describe('holochrome', function(){
 
     expect(requests.length).toBe(numAttempts+3);
     expect(requests[numAttempts+2].method).toBe('GET');
-    expect(requests[numAttempts+2].url).toBe('https://signin.aws.amazon.com/federation?Action=getSigninToken&Session=%7B%22sessionId%22%3A%22omg%22%2C%22sessionKey%22%3A%22such%22%2C%22sessionToken%22%3A%22wow%22%7D');
+    expect(requests[numAttempts+2].url).toBe('https://signin.aws.amazon.com/federation?Action=getSigninToken&SessionDuration=43200&Session=%7B%22sessionId%22%3A%22omg%22%2C%22sessionKey%22%3A%22such%22%2C%22sessionToken%22%3A%22wow%22%7D');
     requests[numAttempts+2].respond(200, {}, JSON.stringify({
       'SigninToken':'token'
     }));
