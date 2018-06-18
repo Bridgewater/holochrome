@@ -1,4 +1,4 @@
-## NOTICE: This is an AdRoll Group-specific fork. Please refer to the upstream for the public/non-modified version. 
+## This is an AdRoll Group-specific fork. Please refer to the upstream for a public version. 
 
 <p align="center"><a href="https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa"><img src="holochrome-440x280.png"/></a></p>
 
