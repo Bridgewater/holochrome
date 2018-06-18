@@ -1,3 +1,5 @@
+## NOTICE: This is an AdRoll Group-specific fork. Please refer to the upstream for the public/non-modified version. 
+
 <p align="center"><a href="https://chrome.google.com/webstore/detail/holochrome/fgnplojdffjfbcmoldcfdoikldnogjpa"><img src="holochrome-440x280.png"/></a></p>
 
 | Browser  |  Version | Downloads  | Rating  |
@@ -44,5 +46,4 @@ cd test && npm install && npm test
 
 ## TODO
 
-1. Rotate session seamlessly without being logged out
-2. Potentially support the [default credential provider chain](http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html) to allow the AWS console to more closely mimic other AWS services.
+1. Potentially support the [default credential provider chain](http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html) to allow the AWS console to more closely mimic other AWS services.
