@@ -132,9 +132,10 @@ chrome.browserAction.onClicked.addListener(eventTriggered);
 
 var init = (function(){
   getMyCreds(false);
-  // Refresh token every 3 hours
   // TODO: Make the refresh period a user input
-  setInterval(getMyCreds, 10800000, false);
+  // 10 hour timeout (10 hours * 60 minutes * 60 seconds * 1000 ms)
+  var timeoutMilliseconds = 10 * 60 * 60 * 1000
+  setInterval(getMyCreds, timeoutMilliseconds, false);
 })();
 
 
