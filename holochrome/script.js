@@ -134,7 +134,7 @@ var init = (function(){
   getMyCreds(false);
   // TODO: Make the refresh period a user input
   // 10 hour timeout (10 hours * 60 minutes * 60 seconds * 1000 ms)
-  var timeoutMilliseconds = 10 * 60 * 60 * 1000;
+  const timeoutMilliseconds = 10 * 60 * 60 * 1000;
   setInterval(getMyCreds, timeoutMilliseconds, false);
 })();
 
