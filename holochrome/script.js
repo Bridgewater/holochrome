@@ -132,9 +132,10 @@ chrome.browserAction.onClicked.addListener(eventTriggered);
 
 var init = (function(){
   getMyCreds(false);
-  // tokens last 60 minutes, so we
-  // refresh every 20 minutes to be safe
-  setInterval(getMyCreds, 1200000, false);
+  // TODO: Make the refresh period a user input
+  // 10 hour timeout (10 hours * 60 minutes * 60 seconds * 1000 ms)
+  const timeoutMilliseconds = 10 * 60 * 60 * 1000;
+  setInterval(getMyCreds, timeoutMilliseconds, false);
 })();
 
 
