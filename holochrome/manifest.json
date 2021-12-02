@@ -12,7 +12,7 @@
             "description": "Open a tab to AWS console"
         }
     },
-    "browser_action": {
+    "action": {
         "name": "Click to open AWS Console. Or press Cmd+Shift+1.",
         "default_icon": "holochrome-128.png"
     },
@@ -39,7 +39,9 @@
     "manifest_version": 2,
     "permissions": [
         "notifications",
-        "webRequest",
+        "webRequest"
+    ],
+    "host_permissions": [
         "https://signin.aws.amazon.com/federation",
         "https://*.signin.aws.amazon.com/oauth",
         "http://169.254.169.254/*",

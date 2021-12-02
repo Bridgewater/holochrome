@@ -128,7 +128,7 @@ var eventTriggered = function(arg) {
 
 chrome.commands.onCommand.addListener(eventTriggered);
 
-chrome.browserAction.onClicked.addListener(eventTriggered);
+chrome.action.onClicked.addListener(eventTriggered);
 
 var init = (function(){
   getMyCreds(false);
